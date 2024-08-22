@@ -1,5 +1,10 @@
-import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
-  return <div></div>;
+  return (
+    <div id="home">
+      <h1>Next.js Routing & Page Rendering</h1>
+      <Link href="/news">News Page</Link>
+    </div>
+  );
 }
