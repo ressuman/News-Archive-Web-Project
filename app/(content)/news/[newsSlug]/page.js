@@ -1,13 +1,16 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { DUMMY_NEWS } from "@/data/dummy-news/dummy-news";
+//import { DUMMY_NEWS } from "@/data/dummy-news/dummy-news";
 
 import PropTypes from "prop-types";
+import { getNewsItem } from "@/lib/helper/news";
 
-export default function NewsDetailPage({ params }) {
+export default async function NewsDetailPage({ params }) {
   const newsSlugItem = params.newsSlug;
 
-  const newsItem = DUMMY_NEWS.find((item) => item.slug === newsSlugItem);
+  // const newsItem = DUMMY_NEWS.find((item) => item.slug === newsSlugItem);
+
+  const newsItem = await getNewsItem(newsSlugItem);
 
   if (!newsItem) {
     notFound();
