@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { DUMMY_NEWS } from "@/data/dummy-news/dummy-news";
 
+import PropTypes from "prop-types";
+
 export default function NewsDetailPage({ params }) {
   const newsSlugItem = params.newsSlug;
 
@@ -25,3 +27,9 @@ export default function NewsDetailPage({ params }) {
     </article>
   );
 }
+
+NewsDetailPage.propTypes = {
+  params: PropTypes.shape({
+    newsSlug: PropTypes.string.isRequired,
+  }).isRequired,
+};

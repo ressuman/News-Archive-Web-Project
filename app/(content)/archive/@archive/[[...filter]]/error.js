@@ -1,5 +1,7 @@
 "use client";
 
+import PropTypes from "prop-types";
+
 export default function CatchAllSegmentRouteError({ error }) {
   return (
     <div id="error">
@@ -9,3 +11,9 @@ export default function CatchAllSegmentRouteError({ error }) {
     </div>
   );
 }
+
+CatchAllSegmentRouteError.propTypes = {
+  error: PropTypes.shape({
+    message: PropTypes.string.isRequired,
+  }).isRequired,
+};

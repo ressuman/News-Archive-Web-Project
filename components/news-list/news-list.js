@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PropTypes from "prop-types";
 
 export default function NewsList({ news }) {
   return (
@@ -15,3 +16,14 @@ export default function NewsList({ news }) {
     </ul>
   );
 }
+
+NewsList.propTypes = {
+  news: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      slug: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};

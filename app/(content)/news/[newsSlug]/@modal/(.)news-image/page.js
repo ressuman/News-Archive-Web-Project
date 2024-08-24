@@ -2,6 +2,7 @@
 
 import { notFound, useRouter } from "next/navigation";
 import { DUMMY_NEWS } from "@/data/dummy-news/dummy-news";
+import PropTypes from "prop-types";
 
 export default function InterceptedNewsImage({ params }) {
   const router = useRouter();
@@ -25,3 +26,9 @@ export default function InterceptedNewsImage({ params }) {
     </>
   );
 }
+
+InterceptedNewsImage.propTypes = {
+  params: PropTypes.shape({
+    newsSlug: PropTypes.string.isRequired,
+  }).isRequired,
+};

@@ -2,6 +2,8 @@
 import MainHeader from "@/components/header/main-header/main-header";
 import "../globals.css";
 
+import PropTypes from "prop-types";
+
 //const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -22,3 +24,7 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+RootLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};

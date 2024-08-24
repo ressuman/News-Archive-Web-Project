@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import PropTypes from "prop-types";
 
 export default function NavLink({ href, children }) {
   const path = usePathname();
@@ -12,3 +13,8 @@ export default function NavLink({ href, children }) {
     </Link>
   );
 }
+
+NavLink.propTypes = {
+  href: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};

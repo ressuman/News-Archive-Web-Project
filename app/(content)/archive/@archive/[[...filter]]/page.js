@@ -7,6 +7,8 @@ import {
 } from "@/lib/helper/news";
 import Link from "next/link";
 
+import PropTypes from "prop-types";
+
 export default function FilteredNews({ params }) {
   const { filter } = params;
 
@@ -64,3 +66,9 @@ export default function FilteredNews({ params }) {
     </>
   );
 }
+
+FilteredNews.propTypes = {
+  params: PropTypes.shape({
+    filter: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
+};

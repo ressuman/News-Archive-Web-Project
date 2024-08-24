@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function Archive({ archive, latest }) {
   return (
     <div>
@@ -7,3 +9,8 @@ export default function Archive({ archive, latest }) {
     </div>
   );
 }
+
+Archive.propTypes = {
+  archive: PropTypes.node.isRequired,
+  latest: PropTypes.node.isRequired,
+};
