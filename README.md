@@ -1,9 +1,6 @@
-Here's the updated `README.md` file based on the correct folder structure:
+# News Archive Web
 
-````markdown
-# Next.js News Archive Web
-
-This project is a news archive web application built using Next.js (version 14) with the App Router. It features dynamic routing, server-side rendering, and a modular code structure designed for scalability and maintainability.
+This project is a news archive web application built using Next.js with the App Router. It features dynamic routing, server-side rendering, and a modular code structure designed for scalability and maintainability.
 
 ## Table of Contents
 
@@ -35,6 +32,7 @@ This project is a news archive web application built using Next.js (version 14) 
    git clone https://github.com/yourusername/nextjs-news-archive.git
    cd nextjs-news-archive
    ```
+
 ````
 
 2. Install dependencies:
@@ -188,22 +186,21 @@ Debugging practices have been implemented to ensure the application runs smoothl
 - **Return Statements**: Added conditional checks and return statements where necessary to prevent errors.
 - **Error Handling**: Implemented error handling in dynamic routes to manage missing or incorrect data gracefully.
 
-## Contributing
-
-Contributions are welcome! Please submit a pull request or open an issue to discuss any changes.
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+## Gif
+
+Here is an expected gif of the preview of the App(News Archive Web)
+
+## ![News Archive Web gif](./assets/)
+
 ````
-
-This `README.md` file reflects the structure and details of your Next.js project accurately.
-
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Now Start
 
 First, run the development server:
 
@@ -215,7 +212,7 @@ yarn dev
 pnpm dev
 # or
 bun dev
-````
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
