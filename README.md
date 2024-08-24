@@ -194,7 +194,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Here is an expected gif of the preview of the App(News Archive Web)
 
-## ![News Archive Web gif](./assets/)
+## ![News Archive Web gif](./assets/news-archive.gif)
 
 ````
 
