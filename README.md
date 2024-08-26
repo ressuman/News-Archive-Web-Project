@@ -190,13 +190,15 @@ Debugging practices have been implemented to ensure the application runs smoothl
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+
+
+````
+
 ## Gif
 
 Here is an expected gif of the preview of the App(News Archive Web)
 
-## ![News Archive Web gif](./public/news-archive.gif)
-
-````
+![News Archive Web gif](./public/news-archive.gif)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
