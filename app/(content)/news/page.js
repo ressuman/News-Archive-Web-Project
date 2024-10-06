@@ -2,6 +2,7 @@
 
 import NewsList from "@/components/news-list/news-list";
 import { getAllNews } from "@/lib/helper/news";
+//import { getAllNews } from "@/lib/helper/news";
 //import { DUMMY_NEWS } from "@/data/dummy-news/dummy-news";
 
 //import { useEffect, useState } from "react";
@@ -75,6 +76,10 @@ import { getAllNews } from "@/lib/helper/news";
 export default async function NewsPage() {
   //const news = getAllNews();
   const news = await getAllNews();
+
+  if (!news || news.length === 0) {
+    return <p>No news found!</p>;
+  }
 
   return (
     <>
